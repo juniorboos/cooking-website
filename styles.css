@@ -1,0 +1,157 @@
+* {
+   margin: 0;
+   padding: 0;
+   overflow-x: hidden;
+}
+
+.main-container {
+   background-color: #be5252;
+   display: flex;
+   flex-direction: column;
+   height: 100vh;
+   align-items: center;
+   justify-content: center;
+   background-image: url("./assets/stripes-up.svg"),
+      url("./assets/stripes-down.svg");
+   background-repeat: no-repeat;
+   background-position: left 0 top 0, right 0 bottom -70px;
+}
+
+h1 {
+   color: #fff;
+   font-style: normal;
+   font-weight: normal;
+   line-height: 175px;
+   text-align: center;
+   font-family: Redressed;
+   font-size: 72px;
+   align-items: center;
+   margin-bottom: 12px;
+}
+
+h1 .first-letter {
+   font-family: Great Vibes;
+   font-size: 140px;
+}
+
+h2 {
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 36px;
+   line-height: 66px;
+   text-align: center;
+   align-items: center;
+   color: #ffffff;
+   /* margin-bottom: 48px; */
+   width: 310px;
+
+   background: #b72020;
+}
+
+.social-media {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   width: 320px;
+}
+
+.social-icon {
+   margin-top: 48px;
+   height: 65px;
+}
+
+.social-icon:hover {
+   margin-top: 28px;
+   height: 85px;
+}
+
+.title {
+   padding: 64px 0 0 0;
+   /* line-height: 75px; */
+}
+
+.catalogo-container {
+   background-color: #1f1f1f;
+   padding: 0 15% 40px 15%;
+}
+
+.product {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+   margin: 100px 0;
+}
+
+.reverse {
+   flex-direction: row-reverse;
+}
+
+.product img {
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.product .text-container {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.text-container h3 {
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: bold;
+   font-size: 48px;
+   /* line-height: 56px; */
+   text-align: center;
+
+   color: #ffffff;
+
+   text-shadow: -2px 3px 0px #000000;
+}
+
+.text-container h4 {
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 36px;
+   /* line-height: 56px; */
+   /* text-align: center; */
+   color: #ffffff;
+}
+
+hr {
+   margin: 24px 0 24px 0;
+   width: 250px;
+   color: white;
+   border-width: 1px;
+}
+
+@media (max-width: 1024px) {
+   .product {
+      margin: 60px 0;
+   }
+
+   .product img {
+      height: auto;
+      width: 45%;
+   }
+
+   .text-container {
+      margin: 0 24px;
+   }
+
+   .text-container h3 {
+      font-size: 28px;
+   }
+
+   .text-container h4 {
+      font-size: 18px;
+   }
+
+   hr {
+      width: 60%;
+   }
+}
