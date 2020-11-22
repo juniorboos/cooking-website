@@ -5,16 +5,18 @@
 }
 
 .main-container {
-   background-color: #be5252;
+   background-color: #7e2323;
    display: flex;
    flex-direction: column;
    height: 100vh;
    align-items: center;
    justify-content: center;
    background-image: url("./assets/stripes-up.svg"),
-      url("./assets/stripes-down.svg");
+      url("./assets/stripes-down.svg"), url("./assets/background.gif");
    background-repeat: no-repeat;
-   background-position: left 0 top 0, right 0 bottom -70px;
+   background-position: left 0 top 0, right 0 bottom -70px, left 50% top 50%;
+   background-size: auto, auto, cover;
+   background-blend-mode: normal, normal, multiply;
 }
 
 h1 {
@@ -89,6 +91,9 @@ h2 {
 }
 
 .product img {
+   height: 100%;
+   width: 50%;
+   margin: 0 18px;
    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
 }
 
@@ -130,6 +135,11 @@ hr {
 }
 
 @media (max-width: 1024px) {
+   .main-container {
+      background-size: 35%, 35%, cover;
+      background-position: left 0 top 0, right 0 bottom -70px, left 50% top 50%;
+   }
+
    .product {
       margin: 60px 0;
    }
@@ -153,5 +163,43 @@ hr {
 
    hr {
       width: 60%;
+   }
+}
+
+@media (max-width: 768px) {
+   .product {
+      flex-direction: column;
+   }
+
+   .product img {
+      height: auto;
+      width: 100%;
+      margin-bottom: 24px;
+   }
+}
+
+@media (max-width: 425px) {
+   .catalogo-container {
+      padding: 0 10% 40px 10%;
+   }
+
+   .text-container h3 {
+      font-size: 20px;
+   }
+
+   .text-container h4 {
+      font-size: 18px;
+   }
+}
+
+@media (max-width: 375px) {
+   h1 .first-letter {
+      font-size: 100px;
+   }
+
+   h2 {
+      font-size: 36px;
+      line-height: 66px;
+      width: 310px;
    }
 }
