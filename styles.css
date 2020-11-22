@@ -26,6 +26,14 @@
    background: rgba(255, 0, 0, 0.301);
 }
 
+.author {
+   color: white;
+}
+
+.author a {
+   color: rgb(184, 20, 20);
+}
+
 .main-container {
    background-color: #7e2323;
    display: flex;
@@ -83,6 +91,7 @@ h2 {
 .social-icon {
    margin-top: 48px;
    height: 65px;
+   cursor: pointer;
 }
 
 .social-icon:hover {
