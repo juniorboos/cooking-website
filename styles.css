@@ -4,6 +4,28 @@
    overflow-x: hidden;
 }
 
+/* Designing for scroll-bar */
+::-webkit-scrollbar {
+   width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+   background: #2b1111;
+   /* border-radius: 5px;  */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+   background: rgb(180, 0, 0);
+   border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+   background: rgba(255, 0, 0, 0.301);
+}
+
 .main-container {
    background-color: #7e2323;
    display: flex;
