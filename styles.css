@@ -197,6 +197,7 @@ hr {
    display: flex;
    flex-direction: row;
    justify-content: space-around;
+   overflow: hidden;
 }
 
 .sabores-container .product {
@@ -217,6 +218,7 @@ hr {
    flex-direction: row;
    justify-content: space-around;
    padding-bottom: 18px;
+   overflow: hidden;
 }
 
 .special-info .delivery {
