@@ -39,7 +39,7 @@
          <div class="sabores-container">
             <!-- <div class="product" data-aos="slide-right"> -->
             <div class="product">
-               <img src="./assets/image1.png" alt="" />
+               <img src="./assets/flavours/tradicionais.png" />
                <div class="text-container">
                   <h3>Tradicionais</h3>
                   <hr />
@@ -54,7 +54,7 @@
             </div>
             <!-- <div class="product" data-aos="slide-left"> -->
             <div class="product">
-               <img src="./assets/image2.png" alt="" />
+               <img src="./assets/flavours/especiais.png" alt="" />
                <div class="text-container">
                   <h3>Especiais</h3>
                   <hr />
@@ -69,7 +69,7 @@
             </div>
             <!-- <div class="product" data-aos="slide-right"> -->
             <div class="product">
-               <img src="./assets/image3.png" alt="" />
+               <img src="./assets/flavours/gourmet.png" alt="" />
                <div class="text-container">
                   <h3>Gourmet</h3>
                   <hr />
@@ -150,6 +150,59 @@
                </ul>
             </div>
          </div>
+         <h1 class="title">Higiene</h1>
+         <div class="hygiene">
+            <div class="mySlides fade">
+               <div class="numbertext">1 / 4</div>
+               <img src="./assets/hygiene/image1.jpg" style="width: 100%" />
+               <div class="text">
+                  <p>
+                     Trabalho na cozinha de minha residência, a qual, sem NENHUM
+                     desconforto, poderia mostrar caso tenham dúvidas de
+                     higiene.
+                  </p>
+                  <p>
+                     Os doces são mantidos refrigerados até momento de entrega.
+                  </p>
+               </div>
+            </div>
+
+            <div class="mySlides fade">
+               <div class="numbertext">2 / 4</div>
+               <img src="./assets/hygiene/image2.jpg" style="width: 100%" />
+               <div class="text">
+                  <p>
+                     As marmitinhas, mãos da confeiteira e local de trabalho -
+                     tal qual recipientes onde estão os confeitos, são limpos e
+                     desinfectados constantemente.
+                  </p>
+               </div>
+            </div>
+
+            <div class="mySlides fade">
+               <div class="numbertext">3 / 4</div>
+               <img src="./assets/hygiene/image3.jpg" style="width: 100%" />
+               <div class="text">
+                  <p>Utilizo luvas durante todo o processo e touca de cabelo</p>
+                  <p>
+                     Utilizo máscara no processo de entrega e peço que você
+                     TAMBÉM a utilize.
+                  </p>
+               </div>
+            </div>
+
+            <div class="mySlides fade">
+               <div class="numbertext">4 / 4</div>
+               <img src="./assets/hygiene/image4.jpg" style="width: 100%" />
+               <div class="text">
+                  Nenhum ingrediente fora do prazo de validade é mantido no
+                  local.
+               </div>
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
          <p class="author">
             Design by
             <a
@@ -164,5 +217,31 @@
       AOS.init({
          duration: 1200,
       });
+
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+         showSlides((slideIndex += n));
+      }
+
+      function currentSlide(n) {
+         showSlides((slideIndex = n));
+      }
+
+      function showSlides(n) {
+         var i;
+         var slides = document.getElementsByClassName("mySlides");
+         if (n > slides.length) {
+            slideIndex = 1;
+         }
+         if (n < 1) {
+            slideIndex = slides.length;
+         }
+         for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+         }
+         slides[slideIndex - 1].style.display = "block";
+      }
    </script>
 </html>
