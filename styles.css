@@ -31,6 +31,7 @@
 }
 
 .author a {
+   margin-top: 18px;
    color: rgb(184, 20, 20);
 }
 
@@ -53,7 +54,7 @@ h1 {
    color: #fff;
    font-style: normal;
    font-weight: normal;
-   line-height: 175px;
+   /* line-height: 175px; */
    text-align: center;
    font-family: Redressed;
    font-size: 72px;
@@ -100,7 +101,8 @@ h2 {
 }
 
 .title {
-   padding: 64px 0 0 0;
+   padding: 48px 0;
+   overflow: hidden;
    /* line-height: 75px; */
 }
 
@@ -133,6 +135,7 @@ h2 {
    flex-direction: column;
    align-items: center;
    justify-content: center;
+   overflow-x: visible;
 }
 
 .text-container h3 {
@@ -158,11 +161,113 @@ h2 {
    color: #ffffff;
 }
 
+.text-container h5 {
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 18px;
+   color: #a0a0a0;
+
+   margin-bottom: 12px;
+}
+
+.text-container .desc-container {
+   justify-content: flex-start;
+   overflow-x: visible;
+}
+
+ul,
+li {
+   overflow-x: visible;
+}
+
+li::marker {
+   color: white;
+}
+
 hr {
    margin: 24px 0 24px 0;
    width: 250px;
    color: white;
    border-width: 1px;
+}
+
+.sabores-container {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+}
+
+.sabores-container .product {
+   flex-direction: column;
+   margin: 40px 0;
+   justify-content: flex-start;
+}
+
+.sabores-container .product img {
+   height: auto;
+   width: 90%;
+   margin: 0 0 18px 0;
+}
+
+.special-info {
+   /* border: 1px solid red; */
+   display: flex;
+   flex-direction: row;
+   justify-content: space-around;
+   padding-bottom: 18px;
+}
+
+.special-info .delivery {
+   display: flex;
+   flex-direction: column;
+   width: 45%;
+   background-color: rgb(34, 34, 34);
+   border: 1px solid rgb(49, 49, 49);
+   border-radius: 50px;
+   margin: 0 18px;
+   padding: 0 30px 30px;
+   font-family: Roboto;
+   font-weight: normal;
+   color: white;
+
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.special-info h3 {
+   margin-bottom: 8px;
+   font-size: 18px;
+}
+
+.special-info ul {
+   padding-left: 24px;
+}
+
+.special-info .delivery li {
+   margin-bottom: 6px;
+}
+
+.special-info .payment {
+   display: flex;
+   flex-direction: column;
+   width: 45%;
+   background-color: rgb(34, 34, 34);
+   border: 1px solid rgb(49, 49, 49);
+   border-radius: 50px;
+   margin: 0 18px;
+   padding: 0 30px 30px;
+   font-family: Roboto;
+   font-weight: normal;
+   color: white;
+
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.special-info .payment ul {
+   height: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
 }
 
 @media (max-width: 1024px) {
