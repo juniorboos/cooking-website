@@ -234,7 +234,8 @@ hr {
 
 .additional-info li {
    word-wrap: break-word;
-   margin-bottom: 6px;
+   margin-bottom: 9px;
+   font-size: 18px;
 }
 
 .additional-info ul {
