@@ -32,7 +32,7 @@
 }
 
 .author a {
-   margin-top: 18px;
+   margin-bottom: 40px;
    color: rgb(184, 20, 20);
 }
 
@@ -109,7 +109,7 @@ h2 {
 
 .catalogo-container {
    background-color: #1f1f1f;
-   padding: 0 15% 40px 15%;
+   padding: 0 15%;
    overflow: hidden;
 }
 
@@ -213,11 +213,38 @@ hr {
    margin: 0 0 18px 0;
 }
 
+.additional-info {
+   display: flex;
+   flex-direction: column;
+   background-color: #b72020;
+   font-family: Roboto;
+   font-weight: normal;
+   color: white;
+   padding: 20px 15% 40px;
+   align-items: center;
+   justify-content: center;
+   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.additional-info .title,
+.special-info .title {
+   padding-top: 12px;
+}
+
+.additional-info li {
+   word-wrap: break-word;
+   margin-bottom: 6px;
+}
+
+.additional-info ul {
+   padding-left: 18px;
+}
+
 .special-info {
-   /* border: 1px solid red; */
    display: flex;
    flex-direction: row;
    justify-content: space-around;
+   margin-top: 24px;
    padding-bottom: 18px;
    overflow: visible;
 }
@@ -249,6 +276,14 @@ hr {
 
 .special-info .delivery li {
    margin-bottom: 6px;
+}
+
+.special-info .delivery h3 {
+   font-weight: normal;
+}
+
+li h3 {
+   font-weight: normal;
 }
 
 .special-info .payment {
@@ -446,12 +481,17 @@ hr {
 
 @media (max-width: 425px) {
    .catalogo-container {
-      padding: 0 10% 40px 10%;
+      padding: 0 10%;
    }
 
    .title {
       padding-top: 18px;
       font-size: 48px;
+   }
+
+   .additional-info {
+      padding-left: 18px;
+      padding-right: 18px;
    }
 
    .text-container h3 {
